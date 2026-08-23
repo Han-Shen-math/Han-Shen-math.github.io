@@ -327,6 +327,20 @@ main {
   line-height: 1.45;
 }
 
+.notes-heading {
+  padding: 86px 5% 56px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.notes-heading h2 {
+  max-width: 900px;
+  margin: 0;
+  font-family: var(--serif-body);
+  font-size: clamp(32px, 3.3vw, 52px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
 .featured-note {
   min-height: 218px;
   display: grid;
@@ -348,6 +362,16 @@ main {
   border-left: 1px solid var(--hairline);
 }
 
+.note-track {
+  margin: 0 0 7px;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .status-line {
   margin: 0 0 4px;
   color: var(--blue);
@@ -356,15 +380,16 @@ main {
   font-weight: 500;
 }
 
-.note-copy h2 {
+.note-copy h3 {
   margin: 0 0 8px;
+  overflow-wrap: anywhere;
   font-family: var(--serif-body);
   font-size: clamp(29px, 2.6vw, 42px);
   font-weight: 400;
   line-height: 1.18;
 }
 
-.note-copy > p:not(.status-line) {
+.note-copy > p:not(.status-line):not(.note-track) {
   max-width: 800px;
   margin: 0;
   color: #273244;
@@ -836,6 +861,10 @@ footer a:focus-visible {
 
   .research-item img {
     width: 90px;
+  }
+
+  .notes-heading {
+    padding: 72px 0 42px;
   }
 
   .featured-note {

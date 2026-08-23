@@ -6,6 +6,11 @@ Personal bilingual academic website for Shen Han (沈翰), focused on stochastic
 
 The GitHub Pages deployment target is `https://han-shen-math.github.io/`.
 
+## Long-form learning projects
+
+- 300 Lectures on Probability & Stochastic Analysis
+- 312 Lectures from Computer Architecture to Neuromorphic Intelligence & Compute-in-Memory
+
 ## Local development
 
 ```bash

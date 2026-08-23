@@ -35,20 +35,42 @@ const copy = {
         body: 'Long-term exploration of brain principles for more data-efficient, robust, and generalizable AI systems.',
       },
     ],
-    noteStatus: 'Outline established · Work in progress',
-    noteTitle: '300 Lectures on Probability & Stochastic Analysis',
-    noteBody:
-      'A structured learning route from analysis and measure theory to modern probability, continuous-time stochastic analysis, and selected research frontiers.',
+    notesLabel: 'Long-form learning projects',
+    notesIntro: 'Two structured learning routes, maintained as open works in progress.',
     viewPdf: 'Preview the current PDF',
     downloadPdf: 'Download PDF',
-    noteMeta: 'Current outline · 39 pages · 25 modules · 300 planned lectures',
-    outlineLabel: 'Five-stage route',
-    outline: [
-      'Analysis & measure-theoretic foundations',
-      'Core modern probability',
-      'Stochastic processes & advanced probability',
-      'Continuous-time stochastic analysis',
-      'Research frontiers: rough paths, singular SPDEs, mean-field systems & diffusion models',
+    notes: [
+      {
+        track: 'Probability & analysis',
+        status: 'Outline established · Work in progress',
+        title: '300 Lectures on Probability & Stochastic Analysis',
+        body: 'A structured learning route from analysis and measure theory to modern probability, continuous-time stochastic analysis, and selected research frontiers.',
+        meta: 'Current outline · 39 pages · 25 modules · 300 planned lectures',
+        outlineLabel: 'Five-stage route',
+        outline: [
+          'Analysis & measure-theoretic foundations',
+          'Core modern probability',
+          'Stochastic processes & advanced probability',
+          'Continuous-time stochastic analysis',
+          'Research frontiers: rough paths, singular SPDEs, mean-field systems & diffusion models',
+        ],
+      },
+      {
+        track: 'Brain-inspired systems',
+        status: 'In development · Six-stage course map and all 312 lecture topics established',
+        title: 'From Computer Architecture to Neuromorphic Intelligence & Compute-in-Memory: 312 Lectures',
+        body: 'An evolving interdisciplinary study-note series connecting computer architecture and modern AI with biological neural dynamics, spiking networks, neuromorphic systems, compute-in-memory, and brain-inspired foundation models.',
+        meta: 'Current course map · 42 pages · 26 modules · 312 planned lectures',
+        outlineLabel: 'Six-stage route',
+        outline: [
+          'Computer science & architecture bridge',
+          'Modern AI, foundation models & efficient systems',
+          'Biological brain & stochastic neural dynamics',
+          'Spiking neural networks & neuromorphic systems',
+          'Compute-in-memory, emerging memory & co-design',
+          'Brain-inspired foundation models & research training',
+        ],
+      },
     ],
     aboutLabel: 'About',
     aboutTitle: 'Building a rigorous path into stochastic analysis.',
@@ -107,20 +129,42 @@ const copy = {
         body: '长期探索更高效、鲁棒且具泛化能力的脑启发智能系统。',
       },
     ],
-    noteStatus: '目录与整体结构已确定 · 持续编写中',
-    noteTitle: '《从零基础到概率论与随机分析前沿》300 讲',
-    noteBody:
-      '一条从分析与测度论基础出发，经过现代概率论与连续时间随机分析，最终通往若干研究前沿的系统学习路线。',
+    notesLabel: '长期学习项目',
+    notesIntro: '两条持续学习、整理与维护中的系统讲义路线。',
     viewPdf: '预览当前 PDF',
     downloadPdf: '下载 PDF',
-    noteMeta: '当前目录版本 · 39 页 · 25 个模块 · 计划 300 讲',
-    outlineLabel: '五阶段学习路线',
-    outline: [
-      '分析与测度论基础',
-      '现代概率论核心',
-      '随机过程与高级概率',
-      '连续时间随机分析',
-      '研究前沿：粗糙路径、奇异 SPDE、平均场系统与扩散模型',
+    notes: [
+      {
+        track: '概率论与分析',
+        status: '目录与整体结构已确定 · 持续编写中',
+        title: '《从零基础到概率论与随机分析前沿》300 讲',
+        body: '一条从分析与测度论基础出发，经过现代概率论与连续时间随机分析，最终通往若干研究前沿的系统学习路线。',
+        meta: '当前目录版本 · 39 页 · 25 个模块 · 计划 300 讲',
+        outlineLabel: '五阶段学习路线',
+        outline: [
+          '分析与测度论基础',
+          '现代概率论核心',
+          '随机过程与高级概率',
+          '连续时间随机分析',
+          '研究前沿：粗糙路径、奇异 SPDE、平均场系统与扩散模型',
+        ],
+      },
+      {
+        track: '类脑系统与高效计算',
+        status: '持续维护中 · 六阶段课程地图与 312 讲目录已完成',
+        title: '《从计算机体系结构到类脑智能与存算一体前沿》312 讲',
+        body: '一套持续维护中的跨学科学习讲义，从计算机体系结构与现代 AI 出发，系统连接生物神经动力学、脉冲神经网络、神经形态系统、存算一体和类脑基础模型。',
+        meta: '当前课程地图 · 42 页 · 26 个模块 · 计划 312 讲',
+        outlineLabel: '六阶段学习路线',
+        outline: [
+          '计算机科学与体系结构桥梁',
+          '现代 AI、基础模型与高效系统',
+          '生物脑与随机神经动力学',
+          '脉冲神经网络与神经形态系统',
+          '存算一体、新型存储器与协同设计',
+          '类脑基础模型与研究训练',
+        ],
+      },
     ],
     aboutLabel: '关于我',
     aboutTitle: '正在建立一条通往随机分析研究的严谨路径。',
@@ -159,6 +203,27 @@ const researchImages = [
   '/assets/icon-probability.png',
   '/assets/icon-neural-network.png',
 ];
+
+const noteAssets = [
+  {
+    pdf: '/notes/probability-stochastic-analysis-300-lectures.pdf',
+    icon: '/assets/icon-lecture-book.png',
+    cover: '/assets/lecture-note-cover.png',
+    coverAlt: {
+      en: 'Cover of the current probability and stochastic-analysis lecture-note outline',
+      zh: '概率论与随机分析讲义当前目录版本封面',
+    },
+  },
+  {
+    pdf: '/notes/neuromorphic-cim-312-lectures.pdf',
+    icon: '/assets/icon-neural-network.png',
+    cover: '/assets/neuromorphic-cim-312-cover.png',
+    coverAlt: {
+      en: 'Cover of the current neuromorphic intelligence and compute-in-memory course map',
+      zh: '类脑智能与存算一体课程地图当前封面',
+    },
+  },
+] as const;
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>('en');
@@ -238,48 +303,59 @@ export default function Home() {
       </section>
 
       <section className="notes-section" id="notes" aria-labelledby="notes-title">
-        <div className="featured-note">
-          <img className="book-icon" src="/assets/icon-lecture-book.png" alt="" />
-          <div className="note-copy">
-            <p className="status-line">{t.noteStatus}</p>
-            <h2 id="notes-title">{t.noteTitle}</h2>
-            <p>{t.noteBody}</p>
-            <div className="note-actions">
-              <a
-                href="/notes/probability-stochastic-analysis-300-lectures.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {t.viewPdf}
-              </a>
-              <a href="/notes/probability-stochastic-analysis-300-lectures.pdf" download>
-                {t.downloadPdf}
-              </a>
-            </div>
-          </div>
+        <div className="notes-heading">
+          <p className="section-kicker">{t.notesLabel}</p>
+          <h2 id="notes-title">{t.notesIntro}</h2>
         </div>
 
-        <div className="note-detail">
-          <figure className="note-cover-wrap">
-            <img
-              className="note-cover"
-              src="/assets/lecture-note-cover.png"
-              alt={language === 'en' ? 'Cover of the current lecture-note outline' : '当前讲义目录版本封面'}
-            />
-            <figcaption>{t.noteMeta}</figcaption>
-          </figure>
-          <div className="outline-list">
-            <p className="section-kicker">{t.outlineLabel}</p>
-            <ol>
-              {t.outline.map((item, index) => (
-                <li key={item}>
-                  <span>{String(index + 1).padStart(2, '0')}</span>
-                  <p>{item}</p>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </div>
+        {t.notes.map((note, noteIndex) => {
+          const assets = noteAssets[noteIndex];
+          const noteTitleId = `note-title-${noteIndex + 1}`;
+
+          return (
+            <article className="lecture-note" aria-labelledby={noteTitleId} key={note.title}>
+              <div className="featured-note">
+                <img className="book-icon" src={assets.icon} alt="" />
+                <div className="note-copy">
+                  <p className="note-track">{note.track}</p>
+                  <p className="status-line">{note.status}</p>
+                  <h3 id={noteTitleId}>{note.title}</h3>
+                  <p>{note.body}</p>
+                  <div className="note-actions">
+                    <a href={assets.pdf} target="_blank" rel="noreferrer">
+                      {t.viewPdf}
+                    </a>
+                    <a href={assets.pdf} download>
+                      {t.downloadPdf}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="note-detail">
+                <figure className="note-cover-wrap">
+                  <img
+                    className="note-cover"
+                    src={assets.cover}
+                    alt={assets.coverAlt[language]}
+                  />
+                  <figcaption>{note.meta}</figcaption>
+                </figure>
+                <div className="outline-list">
+                  <p className="section-kicker">{note.outlineLabel}</p>
+                  <ol>
+                    {note.outline.map((item, index) => (
+                      <li key={item}>
+                        <span>{String(index + 1).padStart(2, '0')}</span>
+                        <p>{item}</p>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              </div>
+            </article>
+          );
+        })}
       </section>
 
       <section className="about-section" id="about" aria-labelledby="about-title">
